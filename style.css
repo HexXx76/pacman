@@ -1,0 +1,88 @@
+body{
+    background-color: black;
+}
+.pacman_container{
+    width: 100%;
+    height: 397px;
+    position: relative;
+    border: 2px solid red;
+}
+.cuerpo{
+    width: 158px;
+    height: 158px;
+    background: yellow;
+    border-radius: 50%;
+    position: relative;
+    top: 134px;
+    left: 178px;
+    animation: camina 3s infinite alternate;
+}
+.boca{
+    width: 0;
+    height: 0;
+    border-right: 86px solid black;
+    border-top: 73px solid transparent;
+    border-left: 0px solid transparent;
+    border-bottom: 73px solid transparent;
+    position: relative;
+    top: -17px;
+    left: 250px;
+    animation: camina 3s infinite alternate;
+}
+.ojo{
+    width: 17px;
+    height: 17px;
+    background: black;
+    border-radius: 50%;
+    position: relative;
+    top: -127px;
+    left: 244px;
+    animation: camina 3s infinite alternate;
+}
+
+/* ----------------------------------------------MARK 2--------------------------------------- */
+
+.pacman_container2{
+    width: 100%;
+    height: 397px;
+    position: relative;
+    border: 2px solid red;
+    position: relative;
+}
+.pacman{
+    width: 0;
+    height: 0;
+    border-right: 85px solid transparent;
+    border-top: 85px solid yellow;
+    border-left: 85px solid yellow;
+    border-bottom: 85px solid yellow;
+    border-top-left-radius: 85px;
+    border-top-right-radius: 85px;
+    border-bottom-left-radius: 85px;
+    border-bottom-right-radius: 85px;
+    position: relative;
+    top: 134px;
+    left: 178px;
+    animation: camina 3s infinite alternate;
+}
+.ojito{
+    width: 17px;
+    height: 17px;
+    background: black;
+    border-radius: 50%;
+    position: relative;
+    top: 14px;
+    left: 249px;
+    animation: camina 3s infinite alternate;
+}
+
+
+@keyframes camina {
+    0%{
+        margin-left: 0px;
+    }
+    100%{
+        /* margin-left: 805px; */
+        margin-left: calc(65% - 75px);
+    }
+}
